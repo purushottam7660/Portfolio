@@ -11,11 +11,7 @@
     box-sizing: border-box;
     
 }
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-}
+
 
 html{
     font-size: 10px;
@@ -799,15 +795,23 @@ color:#c26700;
 
 
 /*End animations*/
-
+/* @media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+} */
+/* @media screen and (max-width: 768px) */
 /*Start media queries*/
+
 /Start media queries/
-@media screen and (max-width: 768px){
+
+@media only screen and (max-width: 600px) {
     body{
         width: 100%;
         height: 100%;
         background: black no-repeat center fixed;
         background-size: cover;
+        font-size: 14px;
     }
     p{
         font-size: small;
@@ -1238,9 +1242,6 @@ color:#c26700;
         font-style: normal;
         font-size: 1.5rem;
       } 
-    
-
-
 
 
 
