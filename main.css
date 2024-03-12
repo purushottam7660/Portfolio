@@ -226,12 +226,12 @@ li{
 
 .landing-text h1{
     font-size: 15rem;
-    font-family: 'The Historia Demo',sans-serif;
-    background: linear-gradient(#f0c800ce,#ff5a3dcb);
+    font-family:   'Exo', sans-serif;
+    background: linear-gradient(#f9dbe0ce,#49ef1738);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
-    user-select: none;
+    user-select: auto;
 
     animation: pulse 2s infinite;
 
@@ -803,7 +803,7 @@ color:#c26700;
 /* @media screen and (max-width: 768px) */
 /*Start media queries*/
 
-/Start media queries/
+/* /Start media queries/ */
 
 @media only screen and (max-width: 600px) {
     body{
