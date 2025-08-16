@@ -1243,137 +1243,61 @@ color:#c26700;
         font-size: 1.5rem;
       } 
       
-   /* ===== Career Section ===== */
-   .career {
+    /* ===== Career Section ===== */
+.career {
     padding: 80px 0;
-    background: #f9f9f9;
+    background: #fff;
+}
+
+.career .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.career .section-heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.career .my-career {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.career-item {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.career-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.career-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.career-item p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .career-item {
+        width: 80%;
+        margin: 0 auto;
     }
-
-    .career .section-heading {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .career .section-heading h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    /* ===== My Career Section ===== */
-    .my-career {
-        border-top: 4px solid #ff5a3d;
-        position: relative;
-        margin-top: 15rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
-        grid-gap: 3rem;
-        text-align: left;
-    }
-
-    .my-career .career-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
-        border-right: none;
-        margin-right: 1rem;
-        padding-right: 1rem;
-        position: relative;
-    }
-
-    .my-career .career-item:last-of-type {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        border: none;
-    }
-
-    .my-career .career-item::before,
-    .my-career .career-item::after {
-        position: absolute;
-        display: grid;
-        left: 0%;
-        transform: translateX(-50%);
-    }
-
-    .my-career .career-item::before {
-        content: attr(data-date);
-        top: -5rem;
-        text-align-last: auto;
-        text-align: right;
-        font-size: 1.5rem;
-        color: white;
-        margin-left: 5rem;
-    }
-
-    .my-career .career-item::after {
-        top: -1rem;
-        content: '';
-        box-shadow: 0 0 0 4px #ff5a3d;
-        border-radius: 100%;
-        height: 1.5rem;
-        width: 1.5rem;
-        background-color: #ffe838;
-    }
-
-    .my-career a {
-        color:#ff961e;
-        font-size: 1.5rem;
-        text-decoration: underline;
-    }
-
-    .my-career a:hover {
-        color:#c26700;
-    }
-
-    .career-item h3 {
-        text-align: left;
-        color: #ffee00;
-        letter-spacing: 2px;
-        font-size: large;
-        margin: 2rem -2px 2rem 0;
-    }
-
-    .career-item h1 {
-        text-align: left;
-        letter-spacing: 2px;
-        margin: 2rem -2px 2rem 0;
-    }
-
-    /* ===== Media Queries for Career ===== */
-    @media only screen and (max-width: 600px) {
-        .my-career {
-            border-left: 4px solid #ff5a3d;
-            border-top: none;
-            position: relative;
-            align-items: center;
-            display: grid;
-            margin: 13rem;
-            grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
-            grid-gap: 2.5rem;
-            text-align: left;
-        }
-
-        .career-item h3 {
-            font-size: 1.8rem;
-            margin: -1.5rem 1px 1rem 2rem;
-        }
-
-        .my-career p {
-            margin-left: 2rem;
-            font-size: 1.5rem;
-        }
-
-        .my-career .career-item::before {
-            left: -9rem;
-            width: 10rem;
-            top: -1rem;
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        .my-career a {
-            font-size: 1.3rem;
-            margin-left: 2rem;
-            margin-bottom: 2rem;
-        }
-    }
+}
