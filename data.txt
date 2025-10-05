@@ -1,0 +1,81 @@
+.my-skills{
+    border-top: 4px solid #ff5a3d;   
+    position: relative;
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-gap: 3rem;
+    text-align: left;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.skill h3{
+    text-align: left;
+    color: #ffee00;
+    letter-spacing: 2px;
+    font-size: large;
+    margin: 2rem -2px 2rem 0;
+
+}
+.skill h1{
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+}
+
+.my-skills .skill{
+    border-right: none;
+    margin-right:  1rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+
+.my-skills .skill:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+
+.my-skills .skill::before,
+.my-skills .skill::after{
+    position: absolute;
+    display: grid;
+    left: 0%;
+    transform: translateX(-50%);
+}
+
+.my-skills .skill::before{
+    content: attr(data-date);
+    top: -5rem;
+    text-align-last: auto;
+    text-align: right;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 5rem;
+}
+
+.my-skills .skill::after{
+    top: -1rem;
+    content: '';
+    box-shadow: 0 0 0 4px #ff5a3d;
+    border-radius: 100%;
+    height: 1.5rem;
+    width: 1.5rem; 
+    background-color: #ffe838;
+}
+
+.my-skills a{
+    color:#ff961e;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.my-skills a:hover{
+color:#c26700;
+}
